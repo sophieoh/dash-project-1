@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<head>
+<script src="/assets/jquery.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+<style>
+body {
+  font-family: 'permanent marker', serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: #1e8199;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #aaaaaa;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #df795d;
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255, 0.9);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+.bows {
+  background-image: url("https://ae01.alicdn.com/kf/HTB1MsCRIXXXXXXVXFXXq6xXFXXXs/60PC-Lot-Handmade-Dog-Bows-Dog-Hair-Bows-Pet-Dogs-Grooming-Accessories-Mixed-Supplies.jpg_640x640.jpg");
+}
+.leads {
+  background-image: url("https://pbs.twimg.com/media/C9ZnN4NXcAAM94L.jpg");
+}
+.beds{
+  background-image: url("https://www.dfordog.co.uk/user/products/large/fleece-lined-dog-beds-oval.jpg");
+}
+.price {
+  float: right;
+}
+.show-description p {
+  height: 150px;
+}
+.show-description small {
+  opacity: 1;
+}
+small {
+  opacity: 0;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height:40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+  margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+<h1>Poppy's Pet Accessories</h1>
+<h2>a one stop shop for pets!</h2>
+<div class="Bows">
+  <p>bows <span class="price"> $5</span><br />
+  <small>Bows and ties for your dog or cats collars. Bows and ties for your dog or cats collars. Bows and ties for your dog or cats collars.</small></p>
+</div>
+
+<div class="Leads">
+  <p>leads and collars<span class="price"> $16</span><br />
+  <small>Leads and collars for your dog - all sizes & prices ranging from £10-£20 xxxxxxxjxxjjx.</small></p>
+</div>
+  
+<div class="beds">
+  <p>beds and blankets <span class="price"> $25</span><br />
+  <small> Beds and blankets for your cat or dog starting from £25 upwards - blankets starting at £5.</small></p>
+</div>
+
+<script>
+$('div').on('click', function () {
+  $(this).toggleClass('show-description');
+});
+</script>
+
+
+</body>
